@@ -1,12 +1,25 @@
-# Getting Started with Create React App
+### Weathery App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Shows the latest weather telecast.
 
-## Available Scripts
+### Includes
 
-In the project directory, you can run:
+- chartjs
+- Reactjs
+- Bootstrap
+- openweathermap api
 
-### `npm start`
+### Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Display weather chart
+- Display current weather
+- Display weather condition
+- Display weather for 5 days
+
+### Run on your machine
+
+1.Clone Repository:https://github.com/ayushk12/analytic-edge
+2.cd Weathery
+3.npm install
+4.npm start
+5.visit http://localhost:3000/
