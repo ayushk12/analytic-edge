@@ -9,6 +9,7 @@ export default class Chart extends Component {
       labels: this.props.labels,
       datasets: [
         {
+
           queue: 'queue1',
           label: 'High Temperature (\xB0C)',
           // 
@@ -28,9 +29,21 @@ export default class Chart extends Component {
           hoverBorderColor: '#D73933',
           data: this.props.temp_min
         },
+        {
+          queue: 'queue2',
+          label: 'Humidity (%)',
+          backgroundColor: '#AAE4FF',
+          hoverBackgroundColor: '#62CDFF',
+          borderColor: '#26ADEC',
+          hoverBorderColor: '#1E86B6',
+          data: this.props.hum
+        },
 
       ]
     }
+
+
+
     return (
       <div>
         <Line

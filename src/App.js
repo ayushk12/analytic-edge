@@ -28,6 +28,7 @@ class App extends Component {
     error: undefined,
     labels: [],
     temp_max: [],
+    temp_min: [],
     hum: [],
     wind_speed: [],
     forecast: false
@@ -52,7 +53,7 @@ class App extends Component {
         return data.json();
       });
 
-    //const data = await api_call.json();
+
 
 
     if (city && country) {
@@ -74,6 +75,7 @@ class App extends Component {
         console.log(data);
         let labels = [];
         let temp_max = [];
+        let temp_min = [];
         let hum = [];
         let wind_speed = [];
         let dt;
@@ -85,6 +87,7 @@ class App extends Component {
             // console.log(dt.dt_txt.split(' ')[1]);
             labels.push(date_);
             temp_max.push(dt.main['temp_max']);
+            temp_min.push(dt.main['temp_min']);
             hum.push(dt.main['humidity']);
             wind_speed.push(dt.wind['speed']);
           }
@@ -108,6 +111,7 @@ class App extends Component {
           error: "",
           labels: labels,
           temp_max: temp_max,
+          temp_min: temp_min,
           hum: hum,
           wind_speed: wind_speed
 
@@ -167,6 +171,7 @@ class App extends Component {
                 this.state.forecast ? <Chart
                   labels={this.state.labels}
                   temp_max={this.state.temp_max}
+                  temp_min={this.state.temp_min}
                   hum={this.state.hum}
                   wind_speed={this.state.wind_speed}
                   getPresent={this.getPresent}
