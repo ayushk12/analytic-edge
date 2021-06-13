@@ -18,8 +18,8 @@ Shows the latest weather telecast.
 
 ### Run on your machine
 
-1.Clone Repository:https://github.com/ayushk12/analytic-edge
-2.cd Weathery
-3.npm install
-4.npm start
-5.visit http://localhost:3000/
+- Clone Repository:https://github.com/ayushk12/analytic-edge
+- cd Weathery
+- npm install
+- npm start
+- visit http://localhost:3000/
