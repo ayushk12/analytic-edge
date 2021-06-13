@@ -19,7 +19,7 @@ Shows the latest weather telecast.
 ### Run on your machine
 
 - Clone Repository:https://github.com/ayushk12/analytic-edge
-- cd Weathery
+- cd weather
 - npm install
 - npm start
 - visit http://localhost:3000/
